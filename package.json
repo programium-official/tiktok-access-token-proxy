@@ -1,13 +1,39 @@
 {
   "name": "tiktok-access-token-proxy",
   "version": "1.0.0",
+  "description": "A secure proxy server for TikTok OAuth token requests",
   "type": "module",
   "private": true,
+  "main": "app.js",
+  "keywords": [
+    "tiktok",
+    "oauth",
+    "proxy",
+    "api",
+    "token",
+    "express"
+  ],
+  "author": "Programium P.C.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/programium-official/tiktok-access-token-proxy"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "dev": "node --watch app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "echo \"No linter configured\"",
+    "format": "echo \"No formatter configured\""
   },
   "dependencies": {
-    "express": "~4.16.1",
-    "node-fetch": "^3.3.0"
-  }
+    "express": "^4.21.1",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {},
+  "peerDependencies": {},
+  "optionalDependencies": {}
 }
